@@ -1,0 +1,27 @@
+def al_sayi(mesaj="Lütfen bir sayı girin : "):
+    while True:
+        try:
+            sayi = float(input(mesaj))
+            return sayi  
+        except ValueError:
+            print("Geçersiz giriş. Lütfen bir sayı girin.")
+
+
+
+sayı1 = al_sayi("1. sayıyı girin: ")
+sayı2 = al_sayi("2. sayıyı girin: ")
+
+if sayı2 == 0:
+    print("Bir sayı 0'a bölünemez.")
+
+else:
+
+    çarp = sayı1 * sayı2
+    böl = sayı1 / sayı2
+    topla = sayı1 + sayı2
+    çık = sayı1 - sayı2
+
+    print("Çarpım:", çarp)
+    print("Bölüm:", böl)
+    print("Toplam:", topla)
+    print("Fark:", çık)

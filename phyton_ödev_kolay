@@ -1,0 +1,7 @@
+öğrenci_ismi = input("İsmin: ")
+öğrenci_soyadı = input("Soyadın: ")
+öğrenci_numara = input("Numaran: ")
+öğrenci_ders = input("Dersin Adı: ")
+öğrenci_ort = input("Ortalaman: ")
+
+print ("Okulunumuz" + " " + öğrenci_numara + " " + "no'lu öğrencisi" + " " + öğrenci_ismi + ", bu dönem sounda " + " "  + öğrenci_ders + " " + "dersinden " + " " + öğrenci_ort + " " + "ortalama başarmıştır" )
