@@ -1,0 +1,8 @@
+kolay ödev
+
+sayı = [1, 2, 3, 4, 5]
+index = 0
+
+while index < len(sayı):
+    print(sayı[index])
+    index += 1
