@@ -4,7 +4,6 @@ ogrenciler = {
     "Efe": [75, 80, 68],
 }
 
-# Geçme notu sabiti
 GEÇME_NOTU = 60
 
 def menu_goster():
