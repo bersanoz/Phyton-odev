@@ -1,0 +1,53 @@
+import math
+
+
+def menu_goster():
+    print("\n")
+    print("-" * 30)   
+    
+    
+    print("🚀 HESAP MAKİNESİ 🚀")
+    print("a) Toplama ")
+    print("b) Çıkartma ")
+    print("c) Çarpma ")
+    print("d) Bölme ")
+    print("e) Çıkış")
+    print("\n")
+    print("-" * 20)
+
+
+def toplama(sayı1, sayı2):
+    return sayı1 + sayı2
+
+def çıkartma(sayı1, sayı2):
+    return sayı1 - sayı2
+
+def çarpma(sayı1, sayı2):
+    return sayı1 * sayı2
+
+def bölme(sayı1, sayı2):
+    if sayı2 == 0:  
+        return "Tanımsız (0'a bölünemez)"
+    return sayı1 / sayı2
+
+while True:
+    menu_goster()
+    secim = input("İşlemler arası seçim yapın: ").lower()
+
+    if secim == "e":
+        print("Çıkış yapılıyor. Güle güle! 👋")
+        break
+
+    sayıya = int(input("1. sayıyı giriniz: "))
+    sayıb = int(input("2. sayıyı giriniz: "))
+
+    if secim == "a":
+        print(f"Girdiğiniz sayıların toplamı: {toplama(sayıya, sayıb)}")
+    elif secim == "b":
+        print(f"Girdiğiniz sayıların farkı: {çıkartma(sayıya, sayıb)}")
+    elif secim == "c":
+        print(f"Girdiğiniz sayıların çarpımı: {çarpma(sayıya, sayıb)}")
+    elif secim == "d":
+        print(f"Girdiğiniz sayıların bölümü: {bölme(sayıya, sayıb)}")
+    else:
+        print("Geçersiz işlem, lütfen tekrar deneyin.")
