@@ -1,0 +1,21 @@
+def karakter_sayaci(metin):
+    buyuk_harf_sayisi = 0
+    kucuk_harf_sayisi = 0
+    sayi_sayisi = 0
+
+    for karakter in metin:
+        if karakter.isupper():
+            buyuk_harf_sayisi += 1
+        elif karakter.islower():
+            kucuk_harf_sayisi += 1
+        elif karakter.isdigit():
+            sayi_sayisi += 1
+
+    return buyuk_harf_sayisi, kucuk_harf_sayisi, sayi_sayisi
+    
+girdi = input("Bir metin girin: ")
+buyuk_harf, kucuk_harf, sayilar = karakter_sayaci(girdi)
+
+print(f"Büyük harf sayısı: {buyuk_harf}")
+print(f"Küçük harf sayısı: {kucuk_harf}")
+print(f"Sayıların sayısı: {sayilar}")
